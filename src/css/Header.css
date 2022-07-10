@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
 }
 
 /* Header left part */

@@ -1,0 +1,26 @@
+.siderow {
+  display: flex;
+  align-items: center;
+  padding: 4px 10%;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.siderow-icon {
+  padding: 10px 14px;
+  width: 25px;
+  height: 25px;
+}
+
+.siderow-title {
+  font-size: 18px;
+}
+
+/* hover part */
+.siderow:hover {
+  background-color: #ccc;
+}
+
+.siderow:hover > .siderow-icon {
+  color: red;
+}
