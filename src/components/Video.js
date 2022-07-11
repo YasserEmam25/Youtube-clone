@@ -4,7 +4,7 @@ import "../css/Video.css";
 
 function Video({ image, title, channelName, channelImage, views, published }) {
   return (
-    <div className="video-card">
+    <div className="video">
       <img src={image} className="video-thumbnail" alt="Video-thumbnail" />
       <div className="video-info">
         <img

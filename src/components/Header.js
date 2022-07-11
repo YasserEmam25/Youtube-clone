@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React from "react";
+import React, { useState } from "react";
 import "../css/Header.css";
 import {
   MdOutlineVideoCall,
@@ -8,23 +8,36 @@ import {
   MdApps,
   MdNotificationsNone,
 } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function Header() {
+  const [inputSearch, setInputSearch] = useState("");
+
   return (
     <div className="header">
       <div id="header-left">
         <MdMenu className="icon" />
-        <img
-          id="logo"
-          alt="youtube logo"
-          src="https://static.vecteezy.com/system/resources/previews/003/206/623/original/youtube-editorial-app-icon-free-vector.jpg"
-        />
+        <Link to="/">
+          <img
+            id="logo"
+            alt="youtube logo"
+            src="https://static.vecteezy.com/system/resources/previews/003/206/623/original/youtube-editorial-app-icon-free-vector.jpg"
+          />
+        </Link>
       </div>
 
       {/* Search part */}
       <div id="header-middle">
-        <input id="search-bar" type="text" placeholder="Search" />
-        <MdSearch id="search-icon" className="icon" />
+        <input
+          onChange={(e) => setInputSearch(e.target.value)}
+          value={inputSearch}
+          id="search-bar"
+          type="text"
+          placeholder="Search"
+        />
+        <Link to={`/search?search=${inputSearch}`}>
+          <MdSearch id="search-icon" className="icon" />
+        </Link>
       </div>
 
       <div id="header-right">

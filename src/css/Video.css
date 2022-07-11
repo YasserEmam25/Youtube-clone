@@ -1,4 +1,4 @@
-.video-card {
+.video {
   width: 230px;
   height: 300px;
   display: flex;
@@ -8,14 +8,14 @@
   align-self: center;
 }
 
-.video-thumbnail {
+.video .video-thumbnail {
   width: 220px;
   height: 140px;
   object-fit: cover;
   margin: 6px;
 }
 
-.video-channel-image {
+.video .video-channel-image {
   width: 40px;
   height: 40px;
   object-fit: cover;
@@ -23,22 +23,22 @@
   margin-right: 8px;
 }
 
-.video-info {
+.video .video-info {
   display: flex;
   margin: 0 6px;
   width: 100%;
 }
 
-.video-title {
+.video .video-title {
   font-size: 15px;
   margin-bottom: 4px;
   overflow: hidden;
 }
 
-.channel-name {
+.video .channel-name {
   color: #444;
 }
 
-.video-views-time {
+.video .video-views-time {
   color: #444;
 }
