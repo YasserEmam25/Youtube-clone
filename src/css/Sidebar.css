@@ -1,3 +1,9 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .separator {
   background-color: #bbb;
   width: 80%;
